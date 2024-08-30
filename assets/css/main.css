@@ -29,6 +29,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+
+	
+	.logo img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+
+
+
+	
+
 body {
 	line-height: 1;
 }
@@ -1140,9 +1154,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1288,11 +1305,12 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 15rem;
+			height: 15rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			overflow: hidden;
 		}
 
 			#header .logo .icon:before {
@@ -1332,17 +1350,21 @@ input, select, textarea {
 				line-height: 2;
 			}
 
-		#header nav ul {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			margin-bottom: 0;
-			list-style: none;
-			padding-left: 0;
-			border: solid 1px #ffffff;
-			border-radius: 4px;
-		}
+			#header nav ul {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				margin-bottom: 0;
+				list-style: none;
+				padding-left: 10px; /* Increased padding */
+				padding-right: 10px; /* Increased padding */
+				padding-top: 10px; /* Added padding */
+				padding-bottom: 10px; /* Added padding */
+				border: solid 1px #ffffff;
+				border-radius: 4px;
+			}
+			
 
 			#header nav ul li {
 				padding-left: 0;
@@ -1355,15 +1377,16 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					min-width: 10rem; /* Increased width */
+					height: 3.5rem; /* Increased height */
+					line-height: 3.5rem; /* Adjusted line height */
+					padding: 0 1.75rem 0 1.75rem; /* Increased padding */
 					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					letter-spacing: 0.2rem; /* Adjusted letter spacing */
+					font-size: 0.8rem; /* Increased font size */
 					border-bottom: 0;
 				}
+				
 
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
@@ -1385,7 +1408,8 @@ input, select, textarea {
 		}
 
 		#header nav.use-middle ul li.is-middle {
-			border-left: 0;
+			border-left: 10;
+			border-right: 10;
 		}
 
 		body.is-article-visible #header {
